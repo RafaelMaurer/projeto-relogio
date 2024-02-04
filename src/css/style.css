@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #000000, #2C3E50);
+}
+
+.boas-vindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #b4e3ee;
+    text-shadow: 0 0 30px #17D4FE;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 35px;
+    margin-top: 35vh;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.caixa {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px; 
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #181818;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.relogio {
+    color: #b4e3ee;
+    text-shadow: 0 0 30px #17D4FE;
+    font-size: 60px;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 7px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .boas-vindas{
+        font-size: 20px;
+    }
+    
+    .caixa {
+        padding: 25px; 
+        border-radius: 50px;
+    }
+    
+    .relogio {
+        font-size: 30px;
+    }
+}
